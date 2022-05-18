@@ -5,12 +5,15 @@
   </div>
 </template>
 <script>
-export default {
-  name: "About",
-};
-</script>
-<script setup>
 import { ref } from "vue";
 
-const remark = ref("");
+export default {
+  name: "About",
+  setup() {
+    const remark = ref("");
+    return {
+      remark,
+    };
+  },
+};
 </script>
